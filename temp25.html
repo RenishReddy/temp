@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     <script>
-        let doj = new Date()
+        function chkHoliday(){
+            let doj = document.getElementById("doj")
+            if(doj.getDay() == 3) {
+                msg.innerHtml = "Sorry. We are closed on wednesday.";
+            } else{
+                msg.innerHtml = "Welcome";
+            }
+        }
         //document.write(doj.getDate())
         //document.write(doj.getFullYear())
-        document.write(doj.getDay())
+       //document.write(doj.getDay())
     </script>
+</head>
+<body>
+   <input type="date" id="obj">
+   <button onclick="chkHoliday"Submit</button>
     
 </body>
 </html>
